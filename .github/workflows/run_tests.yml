@@ -8,8 +8,8 @@ on:
 
 jobs:
   run-tests:
-    # Запускаем на чистой Ubuntu, предоставляемой GitHub
-    runs-on: ubuntu-latest
+    # 🛠 Заменяем ubuntu-latest на жестко зафиксированную ubuntu-22.04
+    runs-on: ubuntu-22.04
 
     steps:
       # Шаг 1: Скачиваем код проекта из репозитория
@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          cache: 'pip' # Кэширование pip ускорит последующие запуски
+          cache: 'pip'
 
       # Шаг 3: Устанавливаем зависимости из requirements.txt
       - name: Install dependencies
@@ -29,20 +29,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-
-      # Шаг 4: Устанавливаем системные библиотеки и браузер Chromium через Python-утилиту Playwright
+      # Шаг 4: Устанавливаем системные библиотеки и браузер Chromium
       - name: Install Playwright Browsers
         run: playwright install chromium --with-deps
 
-
-      # Шаг 5: Запускаем тесты в фоновом (headless) режиме
-      # Переопределяем флаг --headed из pytest.ini, так как в CI нет монитора
+      # Шаг 5: Запускаем тесты
       - name: Run Tests
         run: pytest
 
       # Шаг 6: Сохраняем результаты Allure в артефакты сборки
       - name: Upload Allure Results
-        if: always() # Шаг выполнится, даже если тесты упали
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
