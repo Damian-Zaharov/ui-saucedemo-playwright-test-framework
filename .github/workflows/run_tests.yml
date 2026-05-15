@@ -36,7 +36,7 @@ jobs:
       # Шаг 5: Запускаем тесты в фоновом (headless) режиме
       # Переопределяем флаг --headed из pytest.ini, так как в CI нет монитора
       - name: Run Tests
-        run: pytest --headless
+        run: pytest --no-headed
 
       # Шаг 6: Сохраняем результаты Allure в артефакты сборки
       - name: Upload Allure Results
