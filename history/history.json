@@ -1,0 +1,1 @@
+{"93f00d1e81361173e215e76fb7406fc3":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"a022c720c5255fb6","reportUrl":"https://Damian-Zaharov.github.io/ui-saucedemo-playwright-test-framework/7/#testresult/a022c720c5255fb6","status":"passed","time":{"start":1778874037761,"stop":1778874038037,"duration":276}}]}}

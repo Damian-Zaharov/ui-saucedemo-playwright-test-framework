@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Тест успешной авторизации с валидными данными","276","test_successful_login[chromium]","tests","Fri May 15 19:40:37 UTC 2026","passed","Fri May 15 19:40:38 UTC 2026","","test_login","",""
