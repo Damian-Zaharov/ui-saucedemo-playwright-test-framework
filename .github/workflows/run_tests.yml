@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ main, master ]
 
-# 🆕 Даем права пайплайну создавать страницы GitHub Pages
+#  Даем права пайплайну
 permissions:
   contents: write
 
@@ -33,9 +33,9 @@ jobs:
         run: playwright install chromium --with-deps
 
       - name: Run Tests
-        run: pytest
+        run: pytest -n 2
 
-      # 🆕 Шаг 6: Генерируем Allure отчет и публикуем его на GitHub Pages
+      # Генерируем отчет и публикуем
       - name: Deploy Allure Report to GitHub Pages
         if: always()
         uses: simple-elf/allure-report-action@master
@@ -45,7 +45,7 @@ jobs:
           allure_history: allure-history
           keep_reports: 20
 
-      # 🆕 Шаг 7: Публикуем сгенерированную папку в ветку gh-pages
+      # Публикуем папку в gh-pages
       - name: Deploy report to Github Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v4

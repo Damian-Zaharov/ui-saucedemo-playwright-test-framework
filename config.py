@@ -1,9 +1,11 @@
 class Config:
-    # Базовый URL стенда
+    # Базовый URL
     BASE_URL = "https://www.saucedemo.com"
 
-    # Ссылка на страницу каталога
+    # Страница каталога
     INVENTORY_URL = f"{BASE_URL}/inventory.html"
 
-    # Таймауты
+    # Финальный экран
+    CHECKOUT_COMPLETE_URL = f"{BASE_URL}/checkout-complete.html"
+
     TIMEOUT = 3000

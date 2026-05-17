@@ -2,9 +2,6 @@ pytest==8.1.1
 playwright==1.42.0
 pytest-playwright==0.4.4
 allure-pytest==2.13.5
-
-
-# npx playwright install
-# npx playwright codegen
-
-# docker system prune -a
+pytest-order==1.2.0
+pytest-xdist==3.5.0
+filelock==3.14.0
