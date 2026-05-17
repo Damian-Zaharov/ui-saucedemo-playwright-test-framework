@@ -1,5 +1,0 @@
-
-[AUTH] Сессия не найдена. Проходим авторизацию...
-[AUTH] Сессия успешно сохранена в файл auth_state.json
-
-[INFO] Токены и куки успешно сохранены: [{'name': 'session-username', 'value': 'standard_user', 'domain': 'www.saucedemo.com', 'path': '/', 'expires': 1778874637, 'httpOnly': False, 'secure': False, 'sameSite': 'Lax'}]
