@@ -1,2 +1,0 @@
-
-[WORKER] Подгружаем куки из: /tmp/pytest-of-runner/pytest-0/auth_state.json

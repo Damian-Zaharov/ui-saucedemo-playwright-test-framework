@@ -1,3 +1,0 @@
-
-[AUTH MAIN] Инициализация сессии. Файл будет сохранен в: /tmp/pytest-of-runner/pytest-0/auth_state.json
-[AUTH MAIN] Авторизация успешно завершена
