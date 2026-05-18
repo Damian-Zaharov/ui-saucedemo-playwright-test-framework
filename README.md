@@ -125,3 +125,4 @@ allure serve allure-results
 ![Allure_behaviors.png](screenshots/Allure_behaviors.png)
 
 🔗 **Постоянная ссылка на Allure-отчет**: `https://damian-zaharov.github.io/ui-saucedemo-playwright-test-framework/`
+
